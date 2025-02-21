@@ -1,0 +1,161 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+}
+/* 초기화 끝*/
+
+.wrap {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 999;
+  /* gsap에서는 한번에 여러개 선언하는 스타일은(단일속성이아닌) 하나씩 선언해줘야 정상적으로 작동함 */
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  /* border-color: transparent; */
+}
+
+/* 공통 컨텐츠 영역 */
+.con {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header .con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  color: #222;
+  cursor: pointer;
+}
+nav,
+header ul {
+  width: fit-content;
+  height: auto;
+}
+header ul {
+  display: flex;
+  gap: 40px;
+}
+header ul li {
+  /* transition: 0.3s; */
+  cursor: pointer;
+}
+
+/* 컨텐츠영역 */
+main {
+  width: 100%;
+  height: auto;
+}
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+/* sec1 */
+.sec1 {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec1 h2 {
+  font-size: 6vw;
+  color: #fff;
+}
+
+/* sec2 */
+.sec2 ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec2 ul li {
+  width: 20%;
+  height: 400px;
+  transform: translateY(400px);
+  background-color: #222;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+}
+.sec2 ul li:hover {
+  background-color: #000;
+  color: springgreen;
+  border: 2px solid springgreen;
+}
+
+/* sec3 */
+.sec3 {
+  position: relative;
+  height: 1200px;
+  overflow: hidden;
+  background-color: springgreen;
+}
+.sec3 .circle {
+  display: block;
+  width: 2500px;
+  height: 2500px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sec3 .textbox {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+.sec3 .textbox p {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* 푸터 */
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+}
