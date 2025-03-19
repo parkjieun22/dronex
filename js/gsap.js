@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       {
         // 끝날때
         backgroundColor: "rgba(0, 0, 0, 0.4)",
-        borderBottomColor: "rgba(0, 255, 127, 1)",
+        borderBottomColor: "rgb(128, 255, 219)",
       }
     );
 
@@ -41,12 +41,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })
     .to("h1", {
       // 끝날때 모습
-      color: "rgb(0,255,127)",
+      color: "rgb(128, 255, 219)",
       ease: "power1.out",
     })
     .to("header ul li", {
       // 끝날때 모습
-      color: "rgb(0,255,127)",
+      color: "rgb(128, 255, 219)",
       ease: "power1.out",
     });
 
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       {
         // 끝날때
         opacity: 0,
-        y: 200,
+        y: 300,
         scale: 1,
         duration: 1,
       }
